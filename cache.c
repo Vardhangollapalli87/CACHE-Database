@@ -342,7 +342,7 @@ void mainloop(int s){
     }
     else if(pid == 0){
         // child process
-        dprintf(s2,"\n\nConnected to Cache22 Database \n\n   ** USE CORRECT COMMANDS TO INTERACT WITH THE CACHE  **\n \t ---CREATE /path/ \n  \t ---INSERT /path/ key = value\n  \t ---SELECT /path/ key \n  \t ---PRINT (to print tree)\n\n");
+        dprintf(s2,"\n\nConnected to CACHE Database \n\n   ** USE CORRECT COMMANDS TO INTERACT WITH THE CACHE  **\n \t ---CREATE /path/ \n  \t ---INSERT /path/ key = value\n  \t ---SELECT /path/ key \n  \t ---PRINT (to print tree)\n\n");
         ccontinuation = true;
         while(ccontinuation)
             childloop(client);
