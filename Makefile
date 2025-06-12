@@ -24,16 +24,16 @@ CC = cc
 FLAGS = -O2 -Wall -std=c2x
 LDFLAGS = 
 
-all: clean cache22  # Only need to build `cache22`
+all: clean cache  # Only need to build `cache22`
 
-cache22: cache22.o tree.o
+cache: cache.o tree.o
 	$(CC) $(FLAGS) $^ -o $@ $(LDFLAGS)
 
 tree.o: tree.c tree.h
 	$(CC) $(FLAGS) -c $<
 
-cache22.o: cache22.c tree.h
+cache.o: cache.c tree.h
 	$(CC) $(FLAGS) -c $<
 
 clean:
-	rm -f *.o cache22
+	rm -f *.o cache

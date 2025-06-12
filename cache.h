@@ -1,6 +1,6 @@
 
-#ifndef CACHE22
-#define CACHE22
+#ifndef CACHE
+#define CACHE
 
 #define _GNU_SOURCE
 #include "tree.h"

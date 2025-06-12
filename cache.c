@@ -2,7 +2,7 @@
 
 /*cache22.c*/
 
-#include "cache22.h"
+#include "cache.h"
 
 
 int32 handle_create(Client*,int8*,int8*);
