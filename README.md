@@ -34,25 +34,25 @@ This was developed as an exercise in low-level systems programming, combining **
   PRINT
 
 # Foder Structure:
-    ├── cache22.h        # Core server & client definitions
-    ├── server.c         # Main server logic
+    ├── cache.h        # Core server & client definitions
+    ├── cache.c         # Main server logic
     ├── tree.c           # Tree data structure logic
     ├── tree.h           # Tree data structure declarations
     └── Makefile         # Build instructions
 
 
 # How to Run: (commands)
-  . build : make all
-  . start the server : ./cache
-  . connect to server via port(server) : telnet localhost server_port
+  . `build` : make all
+  . `start the server` : ./cache
+  . `connect to server via port(server)` : telnet localhost server_port
   
 # Future Enhancements:
-  ✅ Command error handling
-  🔐 Authentication support
-  🗃️ Persistent storage (serialize tree to file)
-  ⚡ Hash table-based lookup
-  📚 Command history and better CLI parsing
+  - ✅ Command error handling
+  - 🔐 Authentication support
+  - 🗃️ Persistent storage (serialize tree to file)
+  - ⚡ Hash table-based lookup
+  - 📚 Command history and better CLI parsing
 
 
  
- Huge thanks to Jonas Birch — his tutorials that laid the conceptual foundation that made this possible. 
+. Huge thanks to Jonas Birch — his tutorials that laid the conceptual foundation that made this possible. 
